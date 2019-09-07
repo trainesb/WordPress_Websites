@@ -1,0 +1,27 @@
+/* This is the styling for the Road Map portion of this site. Remove once the site has been launched. */
+
+hr {border-color:black;}
+img {max-width:100%; height:auto;}
+.headlines{margin-bottom:25px;font-size:25px;}
+#colors{float:none;text-align:center;}
+#colors div{margin:0 auto;}
+#accents{float:none;text-align:center;}
+#textures div{width:130px;height:150px;}
+#header{background:#24292c;color:#a7a9aa;text-align:center;padding-top:10px;padding-bottom:10px;border-bottom:12px solid #187ba0;}
+#header a{color:#a7a9aa;}
+.hleft{text-align:center;margin-bottom:10px;}
+.hright{text-align:center;}
+#header .btn-default, #header .btn-default:hover{border-radius:0 !important;border:1px solid #a7a9aa !important;color:#a7a9aa !important;background:none !important;}
+
+/* anything smaller is not needed */
+@media (min-width:768px) {
+	.hleft{text-align:left;margin-bottom:0;}
+.hright{text-align:right;}
+#textures div{width:98px;height:150px;}
+#colors{float:left;text-align:center;}
+#accents{float:left;text-align:center;}
+	}
+@media (min-width:992px) {
+	#textures div{width:130px;height:150px;}
+	}
+@media (min-width:1200px) {}

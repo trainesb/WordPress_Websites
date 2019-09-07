@@ -1,0 +1,374 @@
+/*
+
+Theme Name: PWM Custom Theme
+Theme URL: http://www.client_url_here.com
+Custom Wordpress Theme
+Version: 1.0
+Author: Pro Web Marketing
+Author URI: http://www.prowebmarketing.com
+
+*/
+body{-webkit-font-smoothing:antialiased; background-color: #606060;}
+img{max-width:100%;height:auto;}
+a{transition:all 0.2s ease-out;}
+a, a:hover, a:focus{outline:none !important;text-decoration:none;}
+
+h1,h2,h3,h4,h5,h6{word-wrap:break-word;}
+
+hr{border-top:1px solid #666;}
+/* Formidable Adjustments */
+fieldset legend{display:none !important;} .frm_ajax_loading{display:none !important;} .g-recaptcha div{width:100% !important;} .ui-datepicker .ui-datepicker-title select{color:#000;}
+.frm_error{color:#F00;font-size:12px;margin-top:5px;}
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label{color:#F00;}
+.has-error .form-control{border-color:#F00;}
+/* End Formidable Adjustments */
+.btn{white-space:normal;}
+
+.nomargin{margin-left:0;margin-right:0;}
+.nopadding{padding-left:0;padding-right:0;}
+
+#topnav{width: 100%;}
+
+.navbar-fixed {
+  top: 5px;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-border-right {
+	border-right: 1px solid #333;
+}
+/* Global Menu Styles */
+.navbar{margin-bottom:0;min-height:0;}
+.navbar-nav{margin:auto;}
+.navbar-default{background:#c0c0c0;border-radius:0;border:0;}
+.nav>li>a{padding:10px 15px;font-weight: 700;}
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a{padding:10px 15px;}
+.navbar-nav>li>a, .dropdown-menu>li>a, .navbar-default .navbar-toggle{font-size:15px;color:#000;text-align:center;}
+.navbar-default .navbar-nav>li>a{background:none;color:#000;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color:#000;text-decoration:none;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{color:#000;font-weight:700;}
+.navbar-default .navbar-nav .dropdown-menu>li>a{color:#000;white-space:normal;}
+.navbar-default .navbar-nav .dropdown-menu>li>a:hover{text-decoration:none;}
+.navbar-default .navbar-nav .dropdown-menu{background:#666;padding:0;text-align:center;border:0;border-radius:0;}
+.navbar-default .navbar-nav .current-menu-item a{background:#666;}
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background:none;border:0;border-radius:0;}
+.navbar-toggle{text-align:center;width:100%;float:none;margin:0;}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{border:none;box-shadow:none;}
+.navbar-collapse{padding:0;}
+/* Current Ancestor with Current Page Parent */
+.navbar-default .navbar-nav .current-page-ancestor a.dropdown-toggle, .navbar-default .navbar-nav .current_page_parent a.dropdown-toggle, .navbar-default .navbar-nav .current-page-ancestor a.dropdown-toggle:hover, .navbar-default .navbar-nav .current-page-ancestor a.dropdown-toggle:focus{background:#666;font-weight:700;text-decoration:none;}
+
+.btn-default{float: right; margin-top: 15px;bottom: 0;}
+.btn-default:hover, .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .btn-default.focus, .btn-default:focus{}
+
+/* keep for WP image captions and alignments */
+img.centered{clear:both;display:block;margin-left:auto;margin-right:auto;}
+img.alignright{padding:4px;margin:0 0 2px 7px;display:inline;}
+img.alignleft{padding:4px;margin:0 7px 2px 0;display:inline;}
+.alignright{float:right;}
+.alignleft{float:left;}
+.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto;}
+.wp-caption .wp-caption-text{font-size:11px;line-height:17px;margin:0;padding:0 4px 8px 0;}
+.wp-caption{background-color:#f5f5f5;border:1px solid #ddd;max-width:99%;margin-bottom:10px;padding-top:4px;text-align:center;}
+/* */
+
+.head-title h1 {
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 15px;
+  font-family: 'Cantata One', serif;
+	color: #333;
+}
+
+.head-title {
+	text-align: center;
+  font-family: 'Cantata One', serif;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.head-listings {
+	float: right;
+	margin: 0;
+	font-size: 24px;
+	color: #333;
+  font-family: 'Cantata One', serif;
+}
+
+.head-icons {
+	margin-top: 0px;
+}
+.circle-icon {
+	background: #333;
+	border-radius: 50%;
+	color: #ffffff;
+	padding: 5px;
+}
+
+/* top img */
+
+
+.topimg {
+	/* makes the topimg black and white */
+	-webkit-filter: grayscale(100%); /* safari 6.0- 9.0 */
+	filter: grayscale(100%);
+	z-index: -1; /* makes the top img a peek-a-boo */
+	position: fixed;
+	top: 0;
+	height: 298px;
+}
+
+
+/* topbanner */
+
+#topbanner h1 {
+	color: #333;
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 15px;
+	font-family: 'Cantata One', serif;
+  margin-top: 5px;
+  margin-bottom: 0px;s
+}
+
+/* About */
+
+#about-background {
+	background-color: rgba(51,51,51,0.7);
+}
+
+#about-photo {
+	padding-top: 15px;
+}
+
+
+.about-content p {
+	padding-top: 30px;
+	color: #ffffff;
+	float: right;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+/* featureed-home */
+#featured-home {
+	background-color: #a9a9a9;
+}
+
+.about-content h1, .featured-home-content h2, .contact-title, .form-title {
+	color: #ffffff;
+	border-bottom: 2px solid #ffffff;
+	padding-bottom: 15px;
+	font-family: 'Cantata One', serif;
+	font-size: 35px;
+  text-align: center;
+}
+
+/* bullets */
+.featured-home-content li {
+	color: #d0d0d0;
+	font-size: 40px;
+
+}
+
+/* text*/
+.featured-home-content p {
+	color: #333;
+	font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.featured-home-img {
+margin-top: 34.5px;
+}
+
+/* testimonials */
+.testimonials-img {
+	z-index: -1;
+	position: absolute;
+	height: 577px;
+  width: 100%;
+}
+#testimonials h2 {
+	color: #333;
+	border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+	font-family: 'Cantata One', serif;
+	font-size: 35px;
+  text-align: center;
+}
+
+#testimonials p {
+	color: #333;
+	font-size: 15px;
+	padding-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* contact form */
+
+#contact {
+	background-color: #333;
+	height: auto;
+}
+
+.form{
+	color: #ffffff;
+}
+
+
+
+
+/* footer credits */
+
+#credits {
+	background-color: #00ffff;
+}
+#credits p {
+	margin-bottom: 0;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+#credits p a {
+	color: #333;
+}
+
+
+
+
+/* anything smaller is not needed */
+@media (min-width:768px) {
+.navbar-nav>li>a, .dropdown-menu>li>a, .navbar-default .navbar-toggle, .navbar-default .navbar-nav .dropdown-menu{text-align:left;}
+.navbar .navbar-nav{float:none;margin:0 auto;display:table;table-layout:fixed;}
+
+
+
+
+
+/* header, top banner */
+.head-title h1, #topbanner h1 {
+	font-size: 50px;
+}
+.head-listings h2{
+	margin-top: 77.5px;
+	font-size: 35px;
+}
+
+/* fa-icons */
+.head-icons {
+	margin-top: 71.5px;
+}
+
+.circle-icon {
+	font-size: 30px;
+	padding: 10px;
+}
+
+
+
+/* about */
+#about-photo {
+	margin-left: 159px;
+}
+
+
+.about-content h1 {
+  text-align: center;
+  float: none
+}
+
+.about-content p {
+	float:none
+}
+
+/* top img */
+.topimg {
+	height: auto;
+}
+
+#topbanner {
+	margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* testimonials background img */
+.testimonials-img{
+	height: 600px;
+}
+#testimonials h2 {
+	text-align: right;
+}
+
+#testimonials p {
+	font-size: 25px;
+}
+	}
+
+
+
+@media (min-width:992px) {
+
+/* about */
+	#about-photo {
+		padding-top: 15px;
+		margin-left: 0px;
+	}
+
+
+
+	/* top img */
+	.topimg {
+		height:800px;
+	}
+  #topbanner {
+  	margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+	/* fa-icons */
+	.head-icons {
+		margin-top: 44px;
+	}
+
+	.head-listings h2{
+		margin-top: 50px;
+	}
+
+	/* footer credits */
+	#credits p {
+		font-size: 20px;
+	}
+
+	}
+@media (min-width:1200px) {
+
+	/* topimg */
+	.topimg {
+		height: auto;
+	}
+
+
+/* content */
+
+
+	/* testimonials background img */
+	.testimonials-img{
+		height: 400px;
+	}
+
+	/* fa-icons */
+	.head-icons {
+		margin-top: 35px;
+	}
+
+	.circle-icon {
+		font-size: 48px;
+		padding: 10px;
+	}
+
+	}
